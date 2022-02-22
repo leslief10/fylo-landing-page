@@ -1,0 +1,267 @@
+.main-section {
+  width: 100%;
+  height: 100%;
+  padding: 85px 0 90px;
+  @include displayFlex(center, center, column);
+
+  img {
+    width: 305px;
+    height: 220px;
+    margin-bottom: 50px;
+  }
+
+  .main-info-container {
+    padding: 0 30px;
+    @include displayFlex(center, center, column);
+
+    h1 {
+      margin-bottom: 32px;
+      @include secondaryFontBold;
+      font-size: 2.4rem;
+      line-height: 3.6rem;
+      text-align: center;
+      color: $primary-color;
+    }
+
+    p {
+      margin-bottom: 32px;
+      padding: 0 18px 0 13px;
+      @include mainFontRegular;
+      font-size: 1.4rem;
+      line-height: 2.1rem;
+      text-align: center;
+      color: $primary-color;
+    }
+
+    .form {
+      @include displayFlex(center, center, column);
+      gap: 16px;
+
+      .input-email-container {
+        position: relative;
+
+        .input-email {
+          width: 304px;
+          height: 40px;
+          padding-left: 20px;
+          border: 1px solid $secondary-color;
+          border-radius: 3px;
+          @include secondaryFontRegular;
+          font-size: 1.1rem;
+          color: $secondary-color;
+
+          &:focus {
+            font-size: 1.3rem;
+            color: $primary-color;
+          }
+        }
+      }
+
+      .input-submit {
+        width: 304px;
+        height: 40px;
+        border: none;
+        border-radius: 3px;
+        background: $primary-accent-color;
+        box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.4);
+        @include secondaryFontBold;
+        font-size: 1.4rem;
+        color: #ffffff;
+
+        &:hover {
+          cursor: pointer;
+          background: #6b9bff;
+        }
+      }
+    }
+  }
+}
+
+.secondary-section {
+  width: 100%;
+  height: 100%;
+  @include displayFlex(center, center, column);
+  background: url('../images/bg-curve-mobile.svg') no-repeat center top;
+  background-size: contain;
+
+  .secondary-section-container {
+    width: 100%;
+    height: 100%;
+    margin-top: 53px;
+    padding: 40px 0;
+    @include displayFlex(center, center, column);
+    background: $primary-neutral-color;
+
+    .secondary-img {
+      width: 305px;
+      height: 220px;
+    }
+
+    .secondary-section-text-container {
+      padding: 54px 0 82px;
+      @include displayFlex(center, center, column);
+  
+      .secondary-info-container {
+        @include displayFlex(center, center, column);
+        padding: 0 37px 40px 20px;
+  
+        h2 {
+          margin-bottom: 32px;
+          @include secondaryFontBold;
+          font-size: 1.7rem;
+          text-align: center;
+          color: $primary-color;
+        }
+    
+        p {
+          @include mainFontRegular;
+          font-size: 1.4rem;
+          line-height: 2.1rem;
+          color: $primary-color;
+        }
+    
+        .info-main-paragraph {
+          margin-bottom: 20px;
+        }
+    
+        .info-secondary-paragraph {
+          margin-bottom: 40px;
+        }
+    
+        span {
+          width: fit-content;
+          @include displayFlex(center, center, row);
+          gap: 4px;
+          border-bottom: 1px solid $secondary-accent-color;
+  
+          a {
+            @include mainFontRegular;
+            font-size: 1.2rem;
+            color: $secondary-accent-color;
+            align-self: baseline;
+            text-decoration: none;
+          }
+    
+          img {
+            width: 12px;
+            height: 12px;
+          }
+        }
+      }
+  
+      .testimonial {
+        width: 280px;
+        height: 169px;
+        padding: 20px 17px 21px 27px;
+        background: #ffffff;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        border-radius: 5px;
+  
+        img {
+          margin-bottom: 5px;
+        }
+  
+        p {
+          @include mainFontRegular;
+          font-size: 1rem;
+          line-height: 1.8rem;
+          color: $primary-color;
+        }
+  
+        .testimonial-subject-info {
+          margin-top: 10px;
+          @include displayFlex(flex-start, center, row);
+          gap: 8px;
+  
+          img {
+            width: 24px;
+            height: 24px;
+            margin-bottom: 0;
+            border-radius: 50%;
+          }
+  
+          span p:nth-child(1) {
+            @include mainFontBold;
+            font-size: 0.9rem;
+          }
+  
+          span p:nth-child(2) {
+            margin-top: -7px;
+            @include mainFontRegular;
+            font-size: 0.6rem;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+.aside-cta {
+  width: 100%;
+  height: 100%;
+  padding: 58px 60px 71px 37px;
+  @include displayFlex(center, center, column);
+  background: $secondary-color;
+
+  .aside-info-container {
+    margin-bottom: 25px;
+
+    h3 {
+      margin-bottom: 20px;
+      @include secondaryFontBold;
+      font-size: 1.8rem;
+      color: #ffffff;
+    }
+  
+    p {
+      @include mainFontRegular;
+      font-size: 1.4rem;
+      line-height: 2.1rem;
+      text-align: center;
+      color: #ffffff;
+    }
+  }
+
+  .aside-form {
+    @include displayFlex(center, center, column);
+    gap: 8px;
+
+    .aside-input-email-container {
+      position: relative;
+
+      .aside-input-email {
+        width: 240px;
+        height: 32px;
+        padding-left: 8px;
+        border-radius: 3px;
+        border: none;
+        @include secondaryFontRegular;
+        font-size: 1.1rem;
+        color: $secondary-color;
+
+        &:focus {
+          font-size: 1.2rem;
+          color: $primary-color;
+        }
+      }
+    }
+
+    .aside-input-submit {
+      width: 240px;
+      height: 32px;
+      border: none;
+      border-radius: 3px;
+      background: $primary-accent-color;
+      box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.4);
+      @include secondaryFontBold;
+      font-size: 1rem;
+      color: #ffffff;
+
+      &:hover {
+        cursor: pointer;
+        background: #6b9bff;
+      }      
+    }
+  }
+}

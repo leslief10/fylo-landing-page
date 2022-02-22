@@ -1,0 +1,24 @@
+header {
+  width: 100%;
+  height: 60px;
+  padding: 24px 25px 12px 24px;
+  @include displayFlex(space-between, center, row);
+  gap: 70px;
+
+  img {
+    width: 80px;
+    height: 25px;
+  }
+
+  .header-nav-menu {
+    @include displayFlex(center, center, row);
+    gap: 25px;
+
+    li {
+      @include secondaryFontRegular;
+      font-size: 1.3rem;
+      list-style: none;
+      color: $primary-color;
+    }
+  }
+}

@@ -1,0 +1,45 @@
+$primary-color: #070439;
+$secondary-color: #585989;
+$primary-accent-color: #3065F8;
+$secondary-accent-color: #3C9F8F;
+$primary-neutral-color: #F8F8FE;
+$main-font: 'Open Sans', sans-serif;
+$secondary-font: 'Raleway', sans-serif;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+@mixin displayFlex($justify, $align, $direction) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+}
+
+@mixin  mainFontRegular {
+  font-family: $main-font;
+  font-weight: 400;
+}
+
+@mixin mainFontBold {
+  font-family: $main-font;
+  font-weight: 700;
+}
+
+@mixin secondaryFontRegular {
+  font-family: $secondary-font;
+  font-weight: 400;
+}
+
+@mixin secondaryFontBold {
+  font-family: $secondary-font;
+  font-weight: 700;
+}
