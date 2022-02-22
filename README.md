@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Fylo landing page with two column layout]()
+- Live Site URL: [Fylo landing page with two column layout](https://leslief10.github.io/fylo-landing-page/)
 
 ## My process
 
